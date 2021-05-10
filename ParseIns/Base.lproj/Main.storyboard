@@ -73,7 +73,7 @@
                     <connections>
                         <outlet property="passwordField" destination="fDH-5O-hRF" id="GWd-uZ-AcM"/>
                         <outlet property="usernameField" destination="RzW-MW-f0J" id="Cs9-R6-tfq"/>
-                        <segue destination="u2g-XU-gVK" kind="presentation" identifier="loginSegue" id="rn6-iS-rf3"/>
+                        <segue destination="u2g-XU-gVK" kind="presentation" identifier="loginSegue" modalPresentationStyle="fullScreen" id="rn6-iS-rf3"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -85,7 +85,7 @@
             <objects>
                 <viewController id="9KG-mc-3Ec" customClass="FeedViewController" customModule="ParseIns" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="r0d-Km-Bcn">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="790"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="X7R-h4-Z1p">
@@ -106,14 +106,14 @@
                                                         <constraint firstAttribute="width" secondItem="xNg-g0-j2o" secondAttribute="height" multiplier="374:373" id="ulY-lM-MXu"/>
                                                     </constraints>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Tim" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YUH-Rg-joZ">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="Tim" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YUH-Rg-joZ">
                                                     <rect key="frame" x="8" y="389" width="29" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="love the phote" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="go9-aR-7dl">
-                                                    <rect key="frame" x="45" y="389" width="108.33333333333331" height="21"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="love the phote" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="go9-aR-7dl">
+                                                    <rect key="frame" x="45" y="389" width="337" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -146,7 +146,7 @@
                     <navigationItem key="navigationItem" id="g9X-dN-pER">
                         <barButtonItem key="rightBarButtonItem" title="Item" image="insta_camera_btn" id="ogv-Kr-KNf">
                             <connections>
-                                <segue destination="IvV-Rr-UH9" kind="presentation" id="tfE-fm-UZd"/>
+                                <segue destination="IvV-Rr-UH9" kind="presentation" modalPresentationStyle="fullScreen" id="tfE-fm-UZd"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -163,7 +163,7 @@
             <objects>
                 <viewController id="IvV-Rr-UH9" customClass="CameraViewController" customModule="ParseIns" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="1ok-K6-gmR">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="790"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="image_placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="sqT-u7-9qj">
@@ -216,7 +216,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="u2g-XU-gVK" customClass="Feed" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="aAb-Zj-rir">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="56"/>
+                        <rect key="frame" x="0.0" y="44" width="390" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
